@@ -16,8 +16,8 @@ services:
     command: mongod --quiet --logpath /dev/null
 
   redis:
-    image: redis:7-alpine
-    container_name: redis-dev
+    image: redis:7.0-alpine
+    container_name: redis-test
     restart: unless-stopped
     ports:
       - "6379:6379"
